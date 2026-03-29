@@ -1,0 +1,139 @@
+---
+---
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>achike</title>
+    <link rel="icon" type="image/jpeg" href="/profile.jpg" />
+    <meta property="og:title" content="achike" />
+    <meta property="og:description" content="achike のリンク集" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <main>
+      <div class="profile">
+        <img class="avatar" src="/profile.jpg" alt="achike" width="240" height="240" />
+        <p class="name">achike</p>
+      </div>
+      <div class="links">
+        <a href="https://x.com/kuroppe1819" target="_blank" rel="noopener noreferrer" aria-label="X">
+          <img src="/x.svg" alt="X" class="link-icon" width="32" height="32" />
+        </a>
+        <a href="https://github.com/kuroppe1819" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <img src="/github.svg" alt="GitHub" class="link-icon" width="32" height="32" />
+        </a>
+        <a href="https://speakerdeck.com/kuroppe1819" target="_blank" rel="noopener noreferrer" aria-label="SpeakerDeck">
+          <img src="/speakerdeck.svg" alt="SpeakerDeck" class="link-icon" width="32" height="32" />
+        </a>
+      </div>
+    </main>
+    <footer>
+      <p class="copyright">© 2026 achike</p>
+    </footer>
+  </body>
+</html>
+
+<style>
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #121212;
+    color: #eeeeee;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 720px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333333;
+  }
+
+  .name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .links a {
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .links a:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  .link-icon {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+  }
+
+  @media (min-width: 768px) {
+    .avatar {
+      width: 240px;
+      height: 240px;
+    }
+
+
+    .name {
+      font-size: 1.5rem;
+    }
+
+    .link-icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    color: #eeeeee;
+    opacity: 0.5;
+    text-align: center;
+  }
+</style>
