@@ -17,32 +17,30 @@
         <div class="profile">
           <img class="avatar" src="/profile.jpg" alt="achike" width="240" height="240" />
           <p class="name">achike</p>
-          <div class="portfolio-details">
-            <p class="title">Software Engineer 7+ years</p>
-            <ul class="products" aria-label="Products">
-              <li>
-                <span class="product-info">
-                  <a href="https://pokesol.app/" target="_blank" rel="noopener noreferrer" aria-label="Open PokeNote product">
-                    <span class="product-name">PokeNote</span>
-                  </a>
-                  <span class="product-context">
-                    <span>with</span>
-                    <span>@pokesol</span>
-                  </span>
-                </span>
-                <span class="product-separator" aria-hidden="true">-</span>
-                <a class="market-reception" href="https://www.youtube.com/watch?v=qGu446rqov0" target="_blank" rel="noopener noreferrer" aria-label="View market reception of PokeNote on YouTube">market reception</a>
-              </li>
-              <li>
-                <a href="https://flexbox.kuroppe1819.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Flexbox Cheat Site product">
-                  <span class="product-name">Flexbox Cheat Site</span>
-                </a>
-                <span class="product-separator" aria-hidden="true">-</span>
-                <a class="market-reception" href="https://b.hatena.ne.jp/entry/s/kuroppe1819.github.io/flexbox-cheat-site/" target="_blank" rel="noopener noreferrer" aria-label="View market reception of Flexbox Cheat Site on Hatena Bookmark">market reception</a>
-              </li>
-            </ul>
-          </div>
+          <p class="title">Software Engineer 7+ years</p>
         </div>
+        <ul class="products" aria-label="Products">
+          <li>
+            <span class="product-info">
+              <a href="https://pokesol.app/" target="_blank" rel="noopener noreferrer" aria-label="Open PokeNote product">
+                <span class="product-name">PokeNote</span>
+              </a>
+              <span class="product-context">
+                <span>with</span>
+                <span>@pokesol</span>
+              </span>
+            </span>
+            <span class="product-separator" aria-hidden="true">-</span>
+            <a class="market-reception" href="https://www.youtube.com/watch?v=qGu446rqov0" target="_blank" rel="noopener noreferrer" aria-label="View market reception of PokeNote on YouTube">market reception</a>
+          </li>
+          <li>
+            <a href="https://flexbox.kuroppe1819.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Flexbox Cheat Site product">
+              <span class="product-name">Flexbox Cheat Site</span>
+            </a>
+            <span class="product-separator" aria-hidden="true">-</span>
+            <a class="market-reception" href="https://b.hatena.ne.jp/entry/s/kuroppe1819.github.io/flexbox-cheat-site/" target="_blank" rel="noopener noreferrer" aria-label="View market reception of Flexbox Cheat Site on Hatena Bookmark">market reception</a>
+          </li>
+        </ul>
       </div>
       <div class="links">
         <a href="https://github.com/kuroppe1819" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -125,18 +123,9 @@
     letter-spacing: 0.08em;
     text-align: center;
     white-space: nowrap;
-    width: 100%;
+    width: max-content;
     padding-bottom: 1rem;
     border-bottom: 1px solid #333333;
-  }
-
-  .portfolio-details {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1.5rem;
-    width: max-content;
-    max-width: 100%;
   }
 
   .products {
