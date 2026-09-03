@@ -30,13 +30,19 @@
                     <span>@pokesol</span>
                   </span>
                 </span>
-                <a class="market-reception" href="https://www.youtube.com/watch?v=qGu446rqov0" target="_blank" rel="noopener noreferrer" aria-label="View market reception of PokeNote on YouTube">market reception</a>
+                <span class="market-reception-row">
+                  <span class="reception-marker" aria-hidden="true">-</span>
+                  <a class="market-reception" href="https://www.youtube.com/watch?v=qGu446rqov0" target="_blank" rel="noopener noreferrer" aria-label="View market reception of PokeNote on YouTube">market reception</a>
+                </span>
               </li>
               <li>
                 <a href="https://flexbox.kuroppe1819.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Flexbox Cheat Site product">
                   <span class="product-name">Flexbox Cheat Site</span>
                 </a>
-                <a class="market-reception" href="https://b.hatena.ne.jp/entry/s/kuroppe1819.github.io/flexbox-cheat-site/" target="_blank" rel="noopener noreferrer" aria-label="View market reception of Flexbox Cheat Site on Hatena Bookmark">market reception</a>
+                <span class="market-reception-row">
+                  <span class="reception-marker" aria-hidden="true">-</span>
+                  <a class="market-reception" href="https://b.hatena.ne.jp/entry/s/kuroppe1819.github.io/flexbox-cheat-site/" target="_blank" rel="noopener noreferrer" aria-label="View market reception of Flexbox Cheat Site on Hatena Bookmark">market reception</a>
+                </span>
               </li>
             </ul>
           </div>
@@ -191,6 +197,17 @@
   .market-reception {
     font-size: 0.875rem;
     white-space: nowrap;
+  }
+
+  .market-reception-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.375rem;
+  }
+
+  .reception-marker {
+    color: #888888;
+    font-size: 0.875rem;
   }
 
   .products a:hover,
