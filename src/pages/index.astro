@@ -22,19 +22,35 @@
         <ul class="products" aria-label="Products">
           <li>
             <span class="product-info">
-              <a class="product-name" href="https://pokesol.app/" target="_blank" rel="noopener noreferrer">PokeNote</a>
+              <span class="product-name">PokeNote</span>
               <span class="product-context">
                 <span>with</span>
                 <span>@pokesol</span>
               </span>
             </span>
-            <span class="separator" aria-hidden="true">-</span>
-            <a class="reactions" href="https://www.youtube.com/watch?v=qGu446rqov0" target="_blank" rel="noopener noreferrer" aria-label="Reactions to PokeNote on YouTube">reactions</a>
+            <span class="product-actions">
+              <a href="https://pokesol.app/" target="_blank" rel="noopener noreferrer" aria-label="Open PokeNote product">
+                <span>product</span>
+                <img class="external-link-icon" src="/external-link.svg" alt="" width="14" height="14" />
+              </a>
+              <a href="https://www.youtube.com/watch?v=qGu446rqov0" target="_blank" rel="noopener noreferrer" aria-label="View market reception of PokeNote on YouTube">
+                <span>market reception</span>
+                <img class="external-link-icon" src="/external-link.svg" alt="" width="14" height="14" />
+              </a>
+            </span>
           </li>
           <li>
-            <a class="product-name" href="https://flexbox.kuroppe1819.com/" target="_blank" rel="noopener noreferrer">Flexbox Cheat Site</a>
-            <span class="separator" aria-hidden="true">-</span>
-            <a class="reactions" href="https://b.hatena.ne.jp/entry/s/kuroppe1819.github.io/flexbox-cheat-site/" target="_blank" rel="noopener noreferrer" aria-label="Reactions to Flexbox Cheat Site on Hatena Bookmark">reactions</a>
+            <span class="product-name">Flexbox Cheat Site</span>
+            <span class="product-actions">
+              <a href="https://flexbox.kuroppe1819.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Flexbox Cheat Site product">
+                <span>product</span>
+                <img class="external-link-icon" src="/external-link.svg" alt="" width="14" height="14" />
+              </a>
+              <a href="https://b.hatena.ne.jp/entry/s/kuroppe1819.github.io/flexbox-cheat-site/" target="_blank" rel="noopener noreferrer" aria-label="View market reception of Flexbox Cheat Site on Hatena Bookmark">
+                <span>market reception</span>
+                <img class="external-link-icon" src="/external-link.svg" alt="" width="14" height="14" />
+              </a>
+            </span>
           </li>
         </ul>
       </div>
@@ -120,28 +136,27 @@
   }
 
   .products {
-    display: grid;
-    grid-template-columns: max-content max-content max-content;
-    justify-content: center;
-    align-items: baseline;
-    column-gap: 0.375rem;
-    row-gap: 0.75rem;
-    width: 100%;
-    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: max-content;
+    max-width: 100%;
     list-style: none;
   }
 
   .products li {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.375rem;
     font-size: 1rem;
     line-height: 1.5;
-    white-space: nowrap;
   }
 
   .products a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
     color: #eeeeee;
     font-weight: 500;
     text-decoration-line: underline;
@@ -152,7 +167,8 @@
   }
 
   .product-info,
-  .product-context {
+  .product-context,
+  .product-actions {
     display: flex;
     align-items: baseline;
   }
@@ -167,14 +183,26 @@
     font-size: 0.875rem;
   }
 
-  .product-context,
-  .separator {
+  .product-context {
     color: #888888;
   }
 
-  .product-name,
-  .reactions {
+  .product-name {
+    color: #eeeeee;
+    font-weight: 500;
     white-space: nowrap;
+  }
+
+  .product-actions {
+    gap: 1rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+
+  .external-link-icon {
+    width: 0.875rem;
+    height: 0.875rem;
+    flex: none;
   }
 
   .products a:hover,
