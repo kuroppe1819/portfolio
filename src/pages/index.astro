@@ -13,10 +13,26 @@
   </head>
   <body>
     <main>
-      <div class="profile">
-        <img class="avatar" src="/profile.jpg" alt="achike" width="240" height="240" />
-        <p class="name">achike</p>
-        <p class="title">Software Engineer 7+ years</p>
+      <div class="intro">
+        <div class="profile">
+          <img class="avatar" src="/profile.jpg" alt="achike" width="240" height="240" />
+          <p class="name">achike</p>
+          <p class="title">Software Engineer 7+ years</p>
+        </div>
+        <ul class="products" aria-label="Products">
+          <li>
+            <a class="product-name" href="https://pokesol.app/" target="_blank" rel="noopener noreferrer">PokeNote</a>
+            <span class="product-meta">
+              with <a href="https://www.youtube.com/@pokesol" target="_blank" rel="noopener noreferrer">@pokesol</a>
+            </span>
+          </li>
+          <li>
+            <a class="product-name" href="https://flexbox.kuroppe1819.com/" target="_blank" rel="noopener noreferrer">Flexbox Cheat Site</a>
+            <span class="product-meta">
+              — <a href="https://b.hatena.ne.jp/entry/s/kuroppe1819.github.io/flexbox-cheat-site/" target="_blank" rel="noopener noreferrer">Hatena Bookmark</a>
+            </span>
+          </li>
+        </ul>
       </div>
       <div class="links">
         <a href="https://github.com/kuroppe1819" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -24,9 +40,6 @@
         </a>
         <a href="https://x.com/kuroppe1819" target="_blank" rel="noopener noreferrer" aria-label="X">
           <img src="/x.svg" alt="X" class="link-icon" width="32" height="32" />
-        </a>
-        <a href="https://pokesol.app/" target="_blank" rel="noopener noreferrer" aria-label="ポケソル">
-          <img src="/pokesol.svg" alt="ポケソル" class="link-icon" width="32" height="32" />
         </a>
       </div>
     </main>
@@ -72,6 +85,13 @@
     gap: 1rem;
   }
 
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
   .avatar {
     width: 160px;
     height: 160px;
@@ -91,6 +111,46 @@
     color: #eeeeee;
     opacity: 0.6;
     letter-spacing: 0.08em;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    list-style: none;
+    text-align: center;
+  }
+
+  .products li {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .products a {
+    text-underline-offset: 0.2em;
+    transition: color 0.2s, opacity 0.2s;
+  }
+
+  .product-name {
+    color: #eeeeee;
+    font-weight: 500;
+    text-decoration-color: #666666;
+  }
+
+  .product-meta {
+    color: #999999;
+  }
+
+  .product-meta a {
+    color: inherit;
+    text-decoration-color: #555555;
+  }
+
+  .products a:hover,
+  .products a:focus-visible {
+    color: #ffffff;
+    text-decoration-color: currentColor;
   }
 
   .links {
@@ -129,6 +189,10 @@
     }
 
     .title {
+      font-size: 1rem;
+    }
+
+    .products li {
       font-size: 1rem;
     }
 
