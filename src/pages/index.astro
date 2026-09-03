@@ -28,11 +28,17 @@
                 <a href="https://www.youtube.com/@pokesol" target="_blank" rel="noopener noreferrer">@pokesol</a>
               </span>
             </span>
-            <a class="response" href="https://www.youtube.com/watch?v=qGu446rqov0" target="_blank" rel="noopener noreferrer" aria-label="PokeNote response">Response</a>
+            <span class="separator" aria-hidden="true">-</span>
+            <a class="response" href="https://www.youtube.com/watch?v=qGu446rqov0" target="_blank" rel="noopener noreferrer" aria-label="PokeNote response on YouTube">
+              <img class="response-icon" src="/youtube.svg" alt="" width="16" height="16" />
+            </a>
           </li>
           <li>
             <a class="product-name" href="https://flexbox.kuroppe1819.com/" target="_blank" rel="noopener noreferrer">Flexbox Cheat Site</a>
-            <a class="response" href="https://b.hatena.ne.jp/entry/s/kuroppe1819.github.io/flexbox-cheat-site/" target="_blank" rel="noopener noreferrer" aria-label="Flexbox Cheat Site response">Response</a>
+            <span class="separator" aria-hidden="true">-</span>
+            <a class="response" href="https://b.hatena.ne.jp/entry/s/kuroppe1819.github.io/flexbox-cheat-site/" target="_blank" rel="noopener noreferrer" aria-label="Flexbox Cheat Site response on Hatena Bookmark">
+              <img class="response-icon" src="/hatena-bookmark.svg" alt="" width="16" height="16" />
+            </a>
           </li>
         </ul>
       </div>
@@ -121,16 +127,16 @@
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    width: min(100%, 22rem);
+    width: min(100%, 14rem);
     min-width: 0;
     list-style: none;
   }
 
   .products li {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: baseline;
-    column-gap: 1.25rem;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    column-gap: 0.5rem;
     width: 100%;
     min-width: 0;
     font-size: 1rem;
@@ -166,6 +172,7 @@
   }
 
   .product-context,
+  .separator,
   .response {
     color: #999999;
   }
@@ -178,11 +185,16 @@
   }
 
   .response {
+    display: flex;
+    align-items: center;
     justify-self: end;
-    font-size: 0.75rem;
-    letter-spacing: 0.04em;
-    opacity: 0.6;
-    white-space: nowrap;
+    opacity: 0.45;
+  }
+
+  .response-icon {
+    width: 1rem;
+    height: 1rem;
+    filter: brightness(0) invert(1);
   }
 
   .products a:hover,
