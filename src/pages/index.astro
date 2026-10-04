@@ -89,16 +89,17 @@
     background-color: #121212;
     color: #eeeeee;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-rows: minmax(5rem, 1fr) auto minmax(5rem, 1fr);
+    justify-items: center;
     min-height: 100vh;
-    padding: 3rem 1rem 2rem;
+    min-height: 100svh;
+    padding: 0 1rem;
   }
 
   main {
     --section-gap: 2.5rem;
-    flex: 1;
+    grid-row: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,7 +314,9 @@
   }
 
   footer {
-    margin-top: 2rem;
+    grid-row: 3;
+    align-self: end;
+    padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
   }
 
   .copyright {
