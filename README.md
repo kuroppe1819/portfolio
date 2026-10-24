@@ -1,6 +1,6 @@
 # portfolio
 
-achike's links page
+Achike's links page
 
 https://kuroppe1819.com/
 
