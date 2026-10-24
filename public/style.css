@@ -155,6 +155,10 @@ main {
   white-space: nowrap;
 }
 
+.product-name-closed {
+  color: #aaaaaa;
+}
+
 .media-link {
   display: inline-flex;
   align-items: center;
