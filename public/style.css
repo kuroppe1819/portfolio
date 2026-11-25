@@ -145,10 +145,6 @@ main {
   background-color: #4caf50;
 }
 
-.product-status-closed::before {
-  background-color: #b06a66;
-}
-
 .product-name {
   color: #eeeeee;
   font-weight: 500;
